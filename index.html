@@ -10,9 +10,10 @@
             <details>    
                 <summary>Menu de opcoes:</summary>    <!-- <p> é criar um paragrafo-->
                 <ul>
-                    <li> <a href="sobremim.html"><i>Sobre mim</i></a></li> <!-- target="_blank" abre o link em uma nova guia -->
+                    <li> <a href="sobremim.html"><i>Sobre mim</i></a> </li> <!-- target="_blank" abre o link em uma nova guia -->
                     <!-- <a> liga uma pagina a outra -->
                     <li> <a href="conclusaodocurso.html" target="_blank"> <i>Verificar progresso no curso</i></a> </li>
+                    <li> <a href="formularioteste.html" target="_blank"><i>Formulario para o curso</i></a> </li> 
                 </ul>  
             </details>
         </nav>
@@ -27,6 +28,33 @@
                 <li> html nao é interessante </li>
             </ul>
             <!-- <dl> é a lista determinada que cada item é um titulo e cada titulo <dt> pode ter uma definicao <dd> -->
+            <table border="1"> <!-- table abre a tabela | NÃO UTILZAR BORDER EM HTML ISSO É PARA O CSS so utilizei para facilitar a visualizacao -->
+                <thead> <!-- cria um cabecalho pra tabela dando destaque  -->
+                    <tr>
+                        <th>Linha 1</th>
+                        <th>Linha 2</th>
+                        <th>Linha 3</th>
+                    </tr>
+                </thead>
+                <tfoot> <!-- cria um rodape pra tabela (pode ser usado para um total de vendas por exemplo) -->
+                    <tr>
+                        <td>total de celulas 6</td>
+                    </tr>
+                </tfoot>
+                <tr>    <!-- tr abre uma linha -->
+                    <td>celula 1 da tabela</td> <!-- td abre uma celula -->
+                    <td>celula 2 da tabela</td>
+                    <td rowspan="3">celula 6 da tabela</td> <!-- rowspan faz uma celula ocupar quantas linhas forem necessarias -->
+                </tr>
+                <tr>
+                    <td>celula 3 da tabela</td>
+                    <td>celula 4 da tabela</td>
+                </tr>
+                <tr>
+                    <td colspan="2">celula 5 da tabela</td><!-- colspan faz uma celula ocupar quantas colunas forem necessarias -->
+                </tr>
+            </table>
+        
         </section>
         <footer>
             rodapé em construcao <progress></progress>
