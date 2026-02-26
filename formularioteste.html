@@ -5,7 +5,7 @@
     <body>
         <header><h1>Formulário</h1></header>
         <section>
-            <form method="post" action="#">
+            <form method="post" action="#" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     Nome: <input type="text" name="nome" placeholder="Informe o seu nome" autofocus required> <br><br> <!-- tags interessantes disabled desabilita o campo de texto mas da pra clicar | readonly desabilita o campo e nem da pra clicar -->
@@ -14,15 +14,23 @@
                     <input type="radio" name="sexo" id="homem" value="homem"><br><br>
                     <label for="mulher">Mulher</label>
                     <input type="radio" name="sexo" id="mulher" value="mulher"><br><br> 
-                    Email: <input type="text" name="email" placeholder="Informe seu email" required> <br><br>
-                    Senha: <input type="password" name="senha" placeholder="Informe uma senha" minlength="5" required>
+                    Email: <input type="email" name="email" placeholder="Informe seu email" required> <br><br>
+                    Senha: <input type="password" name="senha" placeholder="Informe uma senha" minlength="5" required> <br><br>
+                    Estado: <select name="estado"><option value="acre">Acre (AC)</option><option value="alagoas">Alagoas (AL)</option><option value="amapa">Amapá (AP)</option><option value="amazonas">Amazonas (AM)</option><option value="bahia">Bahia (BA)</option><option value="ceara">Ceará (CE)</option><option value="distrito-federal">Distrito Federal (DF)</option><option value="espirito-santo">Espírito Santo (ES)</option><option value="goias">Goiás (GO)</option><option value="maranhao">Maranhão (MA)</option><option value="mato-grosso">Mato Grosso (MT)</option><option value="mato-grosso-do-sul">Mato Grosso do Sul (MS)</option><option value="minas-gerais">Minas Gerais (MG)</option><option value="para">Pará (PA)</option><option value="paraiba">Paraíba (PB)</option><option value="parana">Paraná (PR)</option><option value="pernambuco">Pernambuco (PE)</option><option value="piaui">Piauí (PI)</option><option value="rio-de-janeiro">Rio de Janeiro (RJ)</option><option value="rio-grande-do-norte">Rio Grande do Norte (RN)</option><option value="rio-grande-do-sul">Rio Grande do Sul (RS)</option><option value="rondonia">Rondônia (RO)</option><option value="roraima">Roraima (RR)</option><option value="santa-catarina">Santa Catarina (SC)</option><option value="sao-paulo">São Paulo (SP)</option><option value="sergipe">Sergipe (SE)</option><option value="tocantins">Tocantins (TO)</option></select>
+                    <!-- tambem existe a input list que funciona exatamente como o select mas com a diferenca q o usuario pode pesquisar a opcao -->
                 </fieldset>
                 <fieldset>
                     <legend>Produto</legend>
-                    Produto: <input type="text" me="produto" placeholder="Informe o nome do produto" required> <br><br>
+                    Produto: <input type="text" name="produto" placeholder="Informe o nome do produto" required> <br><br>
+                    Tipo: <br><input type="checkbox" name="comidaebebida" value="1">Comida e Bebida<br><input type="checkbox" name="eletronico" value="1">Eletrônico<br><input type="checkbox" name="casa" value="1">Para casa<br><br>
+                    <!-- existe o parametro checked para pre-selecionar uma opcao -->
+                    Data da fabricação: <input type="date" name="data"><br><br>
+                    Coloração principal do produto: <input type="color" name="cor"><br><br>
                     Descricao: <textarea name="descricao" placeholder="Informe uma descricao para o produto"></textarea> <br><br>
+                    Anexar imagem do produto: <input type="file" name="produto"><br><br>
                     <button type="submit">Enviar produto</button> <!-- tipos de botao: submit envia para uma pagina, button tem q setar uma funcao, reset reseta algum parametro definido -->
                 </fieldset>
+                 
             </form>
         </section>
     
