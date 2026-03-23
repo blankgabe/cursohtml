@@ -1,24 +1,31 @@
 <html>
-    <head>  
-        <title> Curso html </title>
-    </head>
-    <body>
+
+<head>
+    <title> Curso html </title>
+</head>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+
+<body>
+    <main>
         <header>
-            <h1> cabecalho aq ficaria um logo fodastico </h1> <hr><!-- <hr> cria uma linha que cruza a tela inteira horizontalmente-->
+            <h1> cabecalho aq ficaria um logo fodastico </h1>
+            <hr><!-- <hr> cria uma linha que cruza a tela inteira horizontalmente-->
         </header>
         <nav>
-            <details>    
-                <summary>Menu de opcoes:</summary>    <!-- <p> é criar um paragrafo-->
+            <details>
+                <summary>Menu de opcoes:</summary> <!-- <p> é criar um paragrafo-->
                 <ul>
-                    <li> <a href="sobremim.html"><i>Sobre mim</i></a> </li> <!-- target="_blank" abre o link em uma nova guia -->
+                    <li> <a href="sobremim.html"><i>Sobre mim</i></a> </li>
+                    <!-- target="_blank" abre o link em uma nova guia -->
                     <!-- <a> liga uma pagina a outra -->
                     <li> <a href="conclusaodocurso.html" target="_blank"> <i>Verificar progresso no curso</i></a> </li>
-                    <li> <a href="formularioteste.html" target="_blank"><i>Formulario para o curso</i></a> </li> 
-                </ul>  
+                    <li> <a href="formularioteste.html" target="_blank"><i>Formulario para o curso</i></a> </li>
+                </ul>
             </details>
         </nav>
         <section>
-            <br>estou aprendendo sobre <b> html </b> é muito <i> maneiro! </i> =) <!-- <b> deixa em negrito | <i> deixa em italico | <br> quebra a linha igual \n -->
+            <br>estou aprendendo sobre <b> html </b> é muito <i> maneiro! </i> =)
+            <!-- <b> deixa em negrito | <i> deixa em italico | <br> quebra a linha igual \n -->
             <ol> <!-- <ol> significa ordenated list que é uma lista que fica organizada em numeros -->
                 <li> <input type="radio" name="html" value="1"> hmtl é interessante </li>
                 <li> <input type="radio" name="html" value="1">html nao é interessante </li>
@@ -27,9 +34,14 @@
                 <li> html é interessante </li>
                 <li> html nao é interessante </li>
             </ul>
+            <p><span id="id1">Aqui está uma pequena demonstracao do css</span></p>
+            <p><span class="class1">outro exemplo de css</span></p>
+            <p><span class="class1">que pode ser aplicado a mais de uma coisa</span></p>
+            assim conseguimos deixar um texto com <span id="baixo">underline</span> pelo css ou com <span id="cima">overline</span>, talvez com <span id="meio">linetrough</span>? é acho que sim<br><br>
             <!-- <dl> é a lista determinada que cada item é um titulo e cada titulo <dt> pode ter uma definicao <dd> -->
-            <table border="1"> <!-- table abre a tabela | NÃO UTILZAR BORDER EM HTML ISSO É PARA O CSS so utilizei para facilitar a visualizacao -->
-                <thead> <!-- cria um cabecalho pra tabela dando destaque  -->
+            <div class="tabela"><table>
+                <!-- table abre a tabela | NÃO UTILZAR BORDER EM HTML ISSO É PARA O CSS so utilizei para facilitar a visualizacao -->
+                <thead> <!-- cria um cabecalho praz tabela dando destaque  -->
                     <tr>
                         <th>Linha 1</th>
                         <th>Linha 2</th>
@@ -41,25 +53,30 @@
                         <td>total de celulas 6</td>
                     </tr>
                 </tfoot>
-                <tr>    <!-- tr abre uma linha -->
+                <tr> <!-- tr abre uma linha -->
                     <td>celula 1 da tabela</td> <!-- td abre uma celula -->
                     <td>celula 2 da tabela</td>
-                    <td rowspan="3">celula 6 da tabela</td> <!-- rowspan faz uma celula ocupar quantas linhas forem necessarias -->
+                    <td rowspan="3">celula 6 da tabela</td>
+                    <!-- rowspan faz uma celula ocupar quantas linhas forem necessarias -->
                 </tr>
                 <tr>
                     <td>celula 3 da tabela</td>
                     <td>celula 4 da tabela</td>
                 </tr>
                 <tr>
-                    <td colspan="2">celula 5 da tabela</td><!-- colspan faz uma celula ocupar quantas colunas forem necessarias -->
+                    <td colspan="2">celula 5 da tabela</td>
+                    <!-- colspan faz uma celula ocupar quantas colunas forem necessarias -->
                 </tr>
-            </table>
-        
+            </table></div><br>
         </section>
-        <footer>
-            rodapé em construcao <progress></progress>
-        </footer>
-    </body>
+        <span id="titulo">Formatação digital ganha destaque e mostra como estilo também comunica</span><br>
+        <span id="corpotexto">Em um mundo cada vez mais visual e organizado, a formatação de textos deixou de ser apenas um detalhe e passou a ser parte essencial da comunicação. Ferramentas como editores de texto populares ajudam a estruturar ideias com títulos, cores, espaçamentos e destaques, tornando a leitura mais agradável e profissional. O que muitos não sabem é que esse mesmo tipo de formatação pode ser recriado utilizando tecnologias da web, como HTML e CSS. Com elas, é possível definir estilos, alinhar conteúdos, criar hierarquias visuais e transformar textos simples em páginas bem organizadas e atrativas, mostrando que a estética e a clareza caminham juntas no ambiente digital.</span>
+    </main>
+    <footer>
+        rodapé em construcao <progress></progress>
+    </footer>
+</body>
+
 </html>
 <!-- que nojo comentar em html mas w vscode -->
- <!-- Shift Alt A comenta -->
+<!-- Shift Alt A comenta -->
